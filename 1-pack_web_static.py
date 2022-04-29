@@ -3,7 +3,6 @@
 generates a .tgz archive from the contents
 of the web_static folder of your AirBnB Clone repo
 """
-
 from os.path import isdir
 from datetime import datetime
 from fabric.api import local

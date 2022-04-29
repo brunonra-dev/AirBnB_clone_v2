@@ -12,7 +12,7 @@ from fabric.api import env
 from pathlib import Path
 
 
-env.hosts = ['3.92.51.75', '54.242.229.40']
+env.hosts = ['35.185.74.67', '34.148.161.130']
 
 
 def do_pack():
