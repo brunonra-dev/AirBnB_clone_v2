@@ -7,7 +7,8 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/", strict_slashes = False)
+
+@app.route("/", strict_slashes=False)
 def hello_world():
     """index
 
@@ -16,7 +17,8 @@ def hello_world():
     """
     return "Hello HBNB!"
 
-@app.route("/hbnb", strict_slashes = False)
+
+@app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """hbhb
 
@@ -25,7 +27,8 @@ def hbnb():
     """
     return "HBNB"
 
-@app.route("/c/<text>", strict_slashes = False)
+
+@app.route("/c/<text>", strict_slashes=False)
 def c(text):
     """/c/<text>
 
@@ -35,7 +38,8 @@ def c(text):
     Returns:
         string: "C <text>"
     """
-    return f'C {text.replace("_", " ")}'
+    return 'C {}'.format(text.replace("_", " "))
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000', debug=False)
